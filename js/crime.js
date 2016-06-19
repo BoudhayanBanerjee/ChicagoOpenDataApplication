@@ -1,6 +1,6 @@
 $(document).ready(function(){
 		$("#crime").click(function(){
-			$.getJSON(url_ps,function(data){
+			$.getJSON(url_crime,function(data){
 				if(data){
 					var count = 0;
 					$.each(data,function(key,value){
