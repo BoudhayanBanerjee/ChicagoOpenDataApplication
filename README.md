@@ -1,2 +1,3 @@
-# Chicago_OpenData_Application
-An open data application using open data api and google maps api
+# Chicago OpenData Application
+
+An open data application using Chicago Open Data API in JQuery.
