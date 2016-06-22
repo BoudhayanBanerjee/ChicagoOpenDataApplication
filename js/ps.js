@@ -5,7 +5,7 @@ $(document).ready(function(){
 					$.each(data,function(key,value){
 					
 						var image = {
-						  url: "res/police.svg",
+						  url: "res/police.png",
 						  size: new google.maps.Size(71, 71),
 						  origin: new google.maps.Point(0, 0),
 						  anchor: new google.maps.Point(17, 34),
