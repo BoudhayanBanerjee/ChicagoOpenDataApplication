@@ -4,13 +4,38 @@ $(document).ready(function(){
 				if(data){
 					$.each(data,function(key,value){
 					
-						var image = {
-						  url: "res/food.svg",
-						  size: new google.maps.Size(71, 71),
-						  origin: new google.maps.Point(0, 0),
-						  anchor: new google.maps.Point(17, 34),
-						  scaledSize: new google.maps.Size(25, 25)
-						};
+						$.each(data,function(key,value){
+						var violation = value.violations;
+						if(value.risk == "Risk 3 (Low)"){
+							var image = {
+							  url: "res/food_g.svg",
+							  size: new google.maps.Size(71, 71),
+							  origin: new google.maps.Point(0, 0),
+							  anchor: new google.maps.Point(17, 34),
+							  scaledSize: new google.maps.Size(25, 25)
+							};
+							violation = "None";
+						}
+						else if(value.risk == "Risk 2 (Medium)"){
+							var image = {
+							  url: "res/food_m.svg",
+							  size: new google.maps.Size(71, 71),
+							  origin: new google.maps.Point(0, 0),
+							  anchor: new google.maps.Point(17, 34),
+							  scaledSize: new google.maps.Size(25, 25)
+							};	
+							
+						}
+						else{
+							var image = {
+							  url: "res/food_b.svg",
+							  size: new google.maps.Size(71, 71),
+							  origin: new google.maps.Point(0, 0),
+							  anchor: new google.maps.Point(17, 34),
+							  scaledSize: new google.maps.Size(25, 25)
+							};
+							
+						}
 					
 						var marker = new google.maps.Marker({
 						map: map,
