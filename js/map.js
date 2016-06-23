@@ -1,4 +1,5 @@
 
+  
   var map;
   var myLatLng = {lat: 41.874820, lng: -87.733561};
   var appToken = '5jAXVDrqioq27hiwZXOY2wpBt';
@@ -96,7 +97,11 @@
 		  map = new google.maps.Map(document.getElementById('map'), {
 		  center: myLatLng,
 		  zoom: 12,
-		  disableDefaultUI: true
+		  mapTypeControl: false,
+		  zoomControl: true,
+		  zoomControlOptions: {
+				position: google.maps.ControlPosition.LEFT_CENTER
+			}
 		});
 		
 		map.setOptions({styles: styles});
