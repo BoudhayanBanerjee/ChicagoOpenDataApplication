@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	
 		$("#traffic").click( function(){
+			$("#wrapper").toggleClass("toggled");
 			
 			$.getJSON(url_traffic,function(data){
 				if(data){
