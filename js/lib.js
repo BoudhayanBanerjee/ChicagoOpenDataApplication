@@ -1,6 +1,6 @@
 $(document).ready(function(){
 $("#lib").click(function(){
-	
+	        $("#wrapper").toggleClass("toggled");
 		var request = new XMLHttpRequest();
 		
 		request.open('GET',url_lib);
