@@ -51,12 +51,12 @@ $("#lib").click(function(){
 					console.log(contentString);
 							
 					var infowindow = new google.maps.InfoWindow({
-					content: contentString
-					});
-					
-					marker.addListener('click',function() {
-										infowindow.open(map, marker);
-					});
+						content: contentString
+					    });
+						
+						marker.addListener('click',function() {
+											infowindow.open(map, marker);
+						});
 						
 							
 			}

@@ -36,7 +36,7 @@ $(document).ready(function(){
 											infowindow.open(map, marker);
 						});
 					});
-					console.log(count);
+					
 				}
 			});
 		});
