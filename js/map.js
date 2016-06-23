@@ -1,7 +1,7 @@
 
   
   var map;
-  var myLatLng = {lat: 41.874820, lng: -87.733561};
+  var myLatLng = {lat: 41.871368, lng: -87.658901};
   var appToken = '5jAXVDrqioq27hiwZXOY2wpBt';
   var url_ps = 'https://data.cityofchicago.org/resource/9rg7-mz9y.json?$$app_token='+appToken;
   var url_lib = 'https://data.cityofchicago.org/resource/psqp-6rmg.json?$$app_token='+appToken;
