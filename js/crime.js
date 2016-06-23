@@ -1,12 +1,12 @@
 $(document).ready(function(){
 		$("#crime").click(function(){
-			$.getJSON(url_ps,function(data){
+			$.getJSON(url_crime,function(data){
 				if(data){
 					var count = 0;
 					$.each(data,function(key,value){
 					    count = count +1;
 						var image = {
-						  url: "res/crime.svg",
+						  url: "res/crime.png",
 						  size: new google.maps.Size(71, 71),
 						  origin: new google.maps.Point(0, 0),
 						  anchor: new google.maps.Point(17, 34),
@@ -36,7 +36,7 @@ $(document).ready(function(){
 											infowindow.open(map, marker);
 						});
 					});
-					console.log(count);
+					
 				}
 			});
 		});

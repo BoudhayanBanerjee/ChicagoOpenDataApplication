@@ -5,10 +5,17 @@
 	
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+	
+	    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
 	<script type="text/javascript" src="js/lib.js"></script>
 	<script type="text/javascript" src="js/map.js"></script>
 	<script type="text/javascript" src="js/ps.js"></script>
@@ -22,6 +29,7 @@
 	<script type="text/javascript" src="js/condom.js"></script>
 	<script type="text/javascript" src="js/traffic.js"></script>
 	<script type="text/javascript" src="js/crime.js"></script>
+
     <style>
       html, body {
         height: 100%;
@@ -32,42 +40,86 @@
         height: 100%;
       }
 	  #name{
-		margin-top: 5px;
+		margin-top: 1%;
 		background-color: #03A9F4;
 		color:#ffffff;
-		font-family: Oswald;
+		font-family:'Oswald', sans-serif;
+		text-align: center;
 	  }
 	  #btn{
-		font-family: Oswald;
+		font-family:'Oswald', sans-serif;
+		
+		
 	  }
 	  
     </style>
-  </head>
-  <body>
-	<div class="col-sm-4" id="sidebar">
-	    <div id="name" class="well">
-		
-			<h4>Chicago City Information System</h4>
-		</div>
-		<div id="btn" class="btn-group-vertical btn-block">
-			<button type="button" class="btn btn-info" id="ps">Police Station Info</button>
-			<button type="button" class="btn btn-info" id="lib">Library Info</button>
-			<button type="button" class="btn btn-info" id="food">Places to eat</button>
-			<button type="button" class="btn btn-info" id="home">Affordable Rental Housing</button>
-			<button type="button" class="btn btn-info" id="wclinic">Woman and Child Clinic</button>
-			<button type="button" class="btn btn-info" id="connect">Connect Chicago Locations</button>
-			<button type="button" class="btn btn-info" id="community">Community Service Centers</button>
-			<button type="button" class="btn btn-info" id="health">Neighborhood Health Clinics</button>
-			<button type="button" class="btn btn-info" id="work">Workforce Centers</button>
-			<button type="button" class="btn btn-info" id="condom">Condom Distribution Sites</button>
-			<button type="button" class="btn btn-info" id="traffic">Traffic Violations</button>
-			<button type="button" class="btn btn-info" id="crime">Crime Info</button>
-		</div>
-	</div>
-    <div class="col-sm-8" id="map"></div>	
+ </head>
+
+
+
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Chicago City Information
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="ps">Police Station Info</a>
+                </li>
+                <li>
+                    <a href="#" id="lib">Library Info</a>
+                </li>
+                <li>
+                    <a href="#" id="food">Places to eat</a>
+                </li>
+                <li>
+                    <a href="#" id="home">Affordable Rental Housing</a>
+                </li>
+                <li>
+                    <a href="#" id="wclinic">Woman and Child Clinic</a>
+                </li>
+                <li>
+                    <a href="#" id="connect">Connect Chicago Locations</a>
+                </li>
+                <li>
+                    <a href="#" id="community">Community Service Centers</a>
+                </li>
+				<li>
+                    <a href="#" id="health">Neighborhood Health Clinics</a>
+                </li>
+				<li>
+                    <a href="#" id="work">Workforce Centers</a>
+                </li>
+				<li>
+                    <a href="#" id="condom">Condom Distribution Sites</a>
+                </li>
+				<li>
+                    <a href="#" id="traffic">Traffic Violations</a>
+                </li>
+				<li>
+                    <a href="#" id="crime">Crime Information</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+    </div>
+    <!-- /#wrapper -->
+
+    <div class="col-sm-12" id="map">
+	</div>	
 	
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfLs3c-fMRQyGSg2L6RoXPiw2fPNaDFhg&callback=initMap"
     async defer></script>
-	
-  </body>
+
+</body>
+
 </html>

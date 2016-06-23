@@ -24,7 +24,7 @@ $("#lib").click(function(){
 			for(var i=0;i<arr.length;i++){
 						
 					var image = {
-								url: "res/library.svg",
+								url: "res/library.png",
 								size: new google.maps.Size(71, 71),
 								origin: new google.maps.Point(0, 0),
 								anchor: new google.maps.Point(17, 34),
@@ -51,12 +51,12 @@ $("#lib").click(function(){
 					console.log(contentString);
 							
 					var infowindow = new google.maps.InfoWindow({
-					content: contentString
-					});
-					
-					marker.addListener('click',function() {
-										infowindow.open(map, marker);
-					});
+						content: contentString
+					    });
+						
+						marker.addListener('click',function() {
+											infowindow.open(map, marker);
+						});
 						
 							
 			}
