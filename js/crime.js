@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		$("#crime").click(function(){
+			$("#wrapper").toggleClass("toggled");
 			$.getJSON(url_crime,function(data){
 				if(data){
 					var count = 0;
