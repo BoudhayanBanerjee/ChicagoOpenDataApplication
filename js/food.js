@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		$("#food").click(function(){
+			$("#wrapper").toggleClass("toggled");
 			$.getJSON(url_food,function(data){
 				if(data){
 					
