@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		$("#wclinic").click(function(){
+			$("#wrapper").toggleClass("toggled");
 			$.getJSON(url_wclinic,function(data){
 				if(data){
 					$.each(data,function(key,value){
