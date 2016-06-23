@@ -38,7 +38,7 @@
         controlText.style.lineHeight = '38px';
         controlText.style.paddingLeft = '5px';
         controlText.style.paddingRight = '5px';
-        controlText.innerHTML = ''<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>'';
+        controlText.innerHTML = '<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>';
         controlUI.appendChild(controlText);
 
         // Setup the click event listeners: simply set the map to Chicago.
@@ -95,7 +95,8 @@
   
 		  map = new google.maps.Map(document.getElementById('map'), {
 		  center: myLatLng,
-		  zoom: 12
+		  zoom: 12,
+		  disableDefaultUI: true
 		});
 		
 		map.setOptions({styles: styles});
