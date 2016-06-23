@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		$("#condom").click(function(){
+			$("#wrapper").toggleClass("toggled");
 			$.getJSON(url_condom,function(data){
 				if(data){
 					$.each(data,function(key,value){
