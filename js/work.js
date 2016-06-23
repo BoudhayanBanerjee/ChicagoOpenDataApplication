@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		$("#work").click(function(){
+			$("#wrapper").toggleClass("toggled");
 			$.getJSON(url_work,function(data){
 				if(data){
 					$.each(data,function(key,value){
