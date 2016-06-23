@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		$("#community").click(function(){
+			$("#wrapper").toggleClass("toggled");
 			$.getJSON(url_community,function(data){
 				if(data){
 					$.each(data,function(key,value){
